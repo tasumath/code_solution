@@ -8,9 +8,7 @@
 
 https://atcoder.jp/contests/tessoku-book/tasks
 
-
-
-＊自力解答の定義をまとめておく
+＊自力解答の定義
 
 1.初見で解答出来たらそのまま解答コードを掲載できる。
 
