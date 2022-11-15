@@ -20,6 +20,6 @@ https://atcoder.jp/contests/tessoku-book/tasks
 
 
 #A問題の達成度
-載せた問題　25/77 2022 11/12
+載せた問題　27/77 2022 11/15
 
 まだまだ頑張るぜ
