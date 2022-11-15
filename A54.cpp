@@ -3,6 +3,8 @@
 #include<cmath>
 #include<stack>
 #include<string>
+#include<queue>
+#include<map>
 using namespace std;
 
 int q;
@@ -10,21 +12,21 @@ int querytype[100009];
 
 int main(){
     cin>>q;
-    stack<string> s;
+    map<string,int> Map;
     for(int i=1;i<=q;i++){
         cin>>querytype[i];
 
         if(querytype[i]==1){
             string t;
             cin>>t;
-            s.push(t);
+            int l; cin>>l;
+            Map[t]=l;
         }
         if(querytype[i]==2){
-            string answer = s.top();
-            cout<<answer<<endl;
+            string ans;
+            cin>>ans;
+            cout<<Map[ans]<<endl;
         }
-        if(querytype[i]==3) s.pop();
     }
-
 
 }

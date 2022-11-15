@@ -6,23 +6,26 @@
 #include<queue>
 using namespace std;
 
+int q;
+int querytype[100009];
+
 int main(){
-  int Q; cin>>Q;
-  queue<string> q;
-  for(int i=1;i<=Q;i++){
-    int x; cin>>x;
-    if(x==1){
-      string s;
-      cin>>s;
-      q.push(s);
+    cin>>q;
+    queue<string> s;
+    for(int i=1;i<=q;i++){
+        cin>>querytype[i];
+
+        if(querytype[i]==1){
+            string t;
+            cin>>t;
+            s.push(t);
+        }
+        if(querytype[i]==2){
+            string answer = s.front();
+            cout<<answer<<endl;
+        }
+        if(querytype[i]==3) s.pop();
     }
-    if(x==2){
-      string ans = q.front();
-      cout<<ans<<endl;
-    }
-    if(x==3){
-      q.pop();
-    }
-  }
+
 
 }
